@@ -3,7 +3,7 @@ groups:
     rules:
       - alert: HighCPU
         expr: 100 - (avg(rate(node_cpu_seconds_total{mode="idle"}[1m])) * 100) > 80
-        for: 5m
+        for: 20s
         labels:
           severity: warning
         annotations:
@@ -11,7 +11,7 @@ groups:
 
       - alert: LowMemory
         expr: node_memory_MemFree_bytes / 1024 / 1024 / 1024 < 1
-        for: 5m
+        for: 20s
         labels:
           severity: critical
         annotations:
@@ -19,7 +19,7 @@ groups:
 
       - alert: HighLoad
         expr: node_load1 > 2
-        for: 5m
+        for: 20s
         labels:
           severity: warning
         annotations:
@@ -27,7 +27,7 @@ groups:
 
       - alert: LowDiskSpace
         expr: node_filesystem_free_bytes{mountpoint="/"} / 1024 / 1024 / 1024 < 5
-        for: 5m
+        for: 20s
         labels:
           severity: critical
         annotations:
