@@ -1,7 +1,7 @@
 # 10-monitoring-03-grafana
 
 ## Задание 1
-<img width="1280" height="1360" alt="image" src="https://github.com/erant-netology-courses/10-monitoring-03-grafana/blob/main/1.JPG?raw=true" />
+<img width="880" height="960" alt="image" src="https://github.com/erant-netology-courses/10-monitoring-03-grafana/blob/main/1.JPG?raw=true" />
 
 ## Задание 2
 ```
@@ -11,7 +11,7 @@ node_memory_MemFree_bytes / 1024 / 1024 / 1024
 node_filesystem_free_bytes{mountpoint="/"}
 ```
 
-<img width="1280" height="1360" alt="image" src="https://github.com/erant-netology-courses/10-monitoring-03-grafana/blob/main/2_dashboard.JPG?raw=true" />
+<img width="1580" height="960" alt="image" src="https://github.com/erant-netology-courses/10-monitoring-03-grafana/blob/main/2_dashboard.JPG?raw=true" />
 
 ## Задание 3
 <img width="1280" height="1360" alt="image" src="https://github.com/erant-netology-courses/10-monitoring-03-grafana/blob/main/9.JPG?raw=true" />
