@@ -51,3 +51,16 @@ services:
       - monitoring-net
     depends_on:
       - prometheus
+
+  alertmanager:
+    image: prom/alertmanager:latest
+    container_name: alertmanager
+    volumes:
+      - ./alertmanager:/etc/alertmanager
+    ports:
+      - 9093:9093
+    command:
+      - --config.file=/etc/alertmanager/alertmanager.yml
+    restart: unless-stopped
+    networks:
+      - monitoring-net
